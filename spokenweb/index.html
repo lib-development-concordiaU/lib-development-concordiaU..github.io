@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title id="pagetitle"></title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <img class="header-img" id="header" src="" alt="image">
+        <h1 id="title" class="main-title"></h1>
+        <div class="description-container">
+            <p  class="description-text" id="description"></p>
+        </div>
+        
+        <div class="main-container">
+            <!-- two column arragement left with the facets / right with the record-->
+            <div class="main-grid-container">
+                <div class="left-container">
+                    <div class="facets-container">
+                        <div id="searchbar-container" class="searchbar-container">
+                            <input type="text" id="search-box" class="search-box" placeholder="Search for a record">
+                            <input type="button" class="search-button" id="search-button" onclick="search()">
+                        </div>
+                        <h2 class="facets-title">FILTER BY</h2>
+                        <div class="facets-list" id="facets-list">
+                        </div>
+                    </div>
+                </div>
+                <div class="right-container">
+                    <div class="record-container">
+                        <div class="record-list" id="record-list">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </body>
+
+    <!-- CARDS TEMPLATES -->
+    <template id="card-template">
+        <div class="card">
+            <img class="card-img-top" src="" alt="Card image cap">
+            <div class="card-header">
+                <h3 class="card-title"></h3>
+            </div>
+            <input type="button" class="card-button" value="View" onclick="">
+        </div>
+    </template>
+
+    <!-- FACET TEMPLATES -->
+    <template id="facet-template">
+        <div class="facet">
+            <label class="facet-title"></label>
+            
+            <select class="facet-select" id="facet-select" onchange="filterRecords(this)">
+                <option value="any">Any</option>
+            </select>
+            </div>
+        </div>
+    </template>
+    <script src="search.js"></script>
+    <script src="main.js"></script>
+</html>

@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title id="item-page-title">Item Title</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <img class="header-img" id="header" src="" alt="image">
+        <h1 id="title" class="main-title"></h1>
+
+        <div class="main-container">
+            <div id="back-link" class="item-back-link">
+                <a href="index.html" class="item-back-link-a">< Back to search</a>
+            </div>
+            <h1 id="item-main-title" class="item-main-title">Item Title</h1>
+            <div id="item-cataloger-information" class="item-cataloger-information">
+
+            </div>
+            <div id="item-audio-player-container" class="item-audio-player-container">
+                <audio controls id="item-audio-player" class="item-audio-player">
+                    <source src="" type="audio/mpeg">
+                </audio>
+            </div>
+            
+            <div id="item-description-container">
+
+                <template id="item-description-template">
+                    <div class="item-accordion-element">
+                        <h2 class="item-accordion-element-title">
+                            <span class="item-accordion-element-title-text"></span>
+                            <img class="item-accordion-element-icon" src="assets/chevron-bottom-svgrepo-com.svg" height=20px>
+                        </h2>
+                        
+                        <div class="item-accordion-element-content hide"></div>
+                    </div>   
+                </template>
+            </div>
+        </div>
+        
+    </body>
+    <script src="search.js"></script>
+    <script src="item.js"></script>
+</html>
